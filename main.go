@@ -4,8 +4,8 @@ import "fmt"
 
 func main() {
 	fmt.Println("Hello,World!")
-	test()
+	myprint("133")
 }
-func test() {
-	fmt.Print("test")
+func myprint(msg string) {
+	fmt.Print(msg)
 }
