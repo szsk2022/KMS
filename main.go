@@ -3,8 +3,16 @@ package main
 import "fmt"
 
 func main() {
+	fmt.Print("请输入你的成绩：")
 	var a int
-	fmt.Print("请输入一个数字：")
 	fmt.Scanln(&a)
-	fmt.Println("输出:", a)
+	switch a {
+	case 90:
+		fmt.Print("A")
+	case 80:
+		fmt.Print("B")
+	default:
+		fmt.Print("D")
+
+	}
 }
