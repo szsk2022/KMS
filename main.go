@@ -3,13 +3,11 @@ package main
 import "fmt"
 
 func main() {
-	getSum(1, 2)
+	arr := [4]int{1, 2, 3, 4}
+	fmt.Println(arr)
+	update(arr)
 }
-func getSum(nums ...int) {
-	sum := 0
-	for i := 0; i < len(nums); i++ {
-		fmt.Println(nums[i])
-		sum = sum + nums[i]
-	}
-	fmt.Println("sum:", sum)
+func update(arr2 [4]int) {
+	arr2[0] = 2
+	fmt.Println("修改后的", arr2)
 }
