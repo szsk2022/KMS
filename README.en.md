@@ -1,5 +1,5 @@
 <h1 align="center">SZSK-KMS Activation Tool</h1>
-<p align="center">A free, simple, fast and free KMS activation tool written in Go language.</p>
+<p align="center">A free, simple, fast  KMS activation tool written in Go language.</p>
 
 <p align="center">
 <a href="./README.md">Introduction</a> |

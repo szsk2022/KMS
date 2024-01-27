@@ -1,5 +1,5 @@
 <h1 align="center">SZSK-KMS 激活工具</h1>
-<p align="center">使用Go语言编写的免费、简单、快速、免费的KMS激活工具</p>
+<p align="center">使用Go语言编写的免费、简单、快速的KMS激活工具</p>
 
 <p align="center">
 <a href="./README.md">中文介绍</a> |
