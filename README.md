@@ -1,25 +1,31 @@
-# NewProject
+# SZSK-KMS激活工具
+![](https://www.sunzishaokao.com/wp-content/uploads/2022/06/73c6e81c1c33.jpg)
+
+[![](https://img.shields.io/badge/Author-孙子烧烤-orange.svg)]()
+[![](https://img.shields.io/badge/version-v1.0-brightgreen.svg)](https://gitee.com/szsk/kms)
+[![Build Status](https://dev.azure.com/407042815/vue-mapvgl/_apis/build/status/vue-mapvgl-Node.js%20With%20Grunt-CI?branchName=master)]()
+
+[![star](https://gitee.com/szsk/kms/badge/star.svg?theme=dark)](https://gitee.com/szsk/kms/stargazers)
+[![fork](https://gitee.com/szsk/kms/badge/fork.svg?theme=dark)](https://gitee.com/szsk/kms/members)
 
 #### 介绍
-{**以下是 Gitee 平台说明，您可以替换此简介**
-Gitee 是 OSCHINA 推出的基于 Git 的代码托管平台（同时支持 SVN）。专为开发者提供稳定、高效、安全的云端软件开发协作平台
-无论是个人、团队、或是企业，都能够用 Gitee 实现代码托管、项目管理、协作开发。企业项目请看 [https://gitee.com/enterprises](https://gitee.com/enterprises)}
 
-#### 软件架构
-软件架构说明
-
-
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
+使用Go语言编写的KMS激活工具，目前没有开发完成，预计2024年3月之前完成开发！
 
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1. 下载我们最新编译的程序[Gitee-Releases](https://gitee.com/szsk/kms/releases "Releases")
+2. 直接打开运行即可，此时程序会自动检测系统版本并激活
+
+#### 编译说明
+
+1. 将源代码克隆到本地  
+	`git clone https://gitee.com/szsk/kms.git`
+
+2. 打开`main.go`，文件内搜索`kms.sunzishaokao.com`替换为你自己的KMS服务器地址
+
+3. 编译源代码  
+	`go build`
 
 #### 参与贡献
 
@@ -28,12 +34,3 @@ Gitee 是 OSCHINA 推出的基于 Git 的代码托管平台（同时支持 SVN�
 3.  提交代码
 4.  新建 Pull Request
 
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)

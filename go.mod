@@ -1,4 +1,4 @@
-module NewProject
+module SZSK_KMS
 
 go 1.21
 
@@ -7,4 +7,7 @@ require (
 	golang.org/x/sys v0.16.0
 )
 
-require github.com/mattn/go-runewidth v0.0.9 // indirect
+require (
+	github.com/mattn/go-runewidth v0.0.15 // indirect
+	github.com/rivo/uniseg v0.4.5 // indirect
+)
