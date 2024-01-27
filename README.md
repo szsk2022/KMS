@@ -3,8 +3,6 @@
 
 [![](https://img.shields.io/badge/Author-孙子烧烤-orange.svg)]()
 [![](https://img.shields.io/badge/version-v1.0-brightgreen.svg)](https://gitee.com/szsk/kms)
-[![Build Status](https://dev.azure.com/407042815/vue-mapvgl/_apis/build/status/vue-mapvgl-Node.js%20With%20Grunt-CI?branchName=master)]()
-
 [![star](https://gitee.com/szsk/kms/badge/star.svg?theme=dark)](https://gitee.com/szsk/kms/stargazers)
 [![fork](https://gitee.com/szsk/kms/badge/fork.svg?theme=dark)](https://gitee.com/szsk/kms/members)
 
