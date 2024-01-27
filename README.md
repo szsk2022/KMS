@@ -9,21 +9,16 @@
 [![fork](https://gitee.com/szsk/kms/badge/fork.svg?theme=dark)](https://gitee.com/szsk/kms/members)
 
 #### 介绍
-
 使用Go语言编写的KMS激活工具，目前没有开发完成，预计2024年3月之前完成开发！
 
 #### 使用说明
-
 1. 下载我们最新编译的程序[Gitee-Releases](https://gitee.com/szsk/kms/releases "Releases")
 2. 直接打开运行即可，此时程序会自动检测系统版本并激活
 
 #### 编译说明
-
 1. 将源代码克隆到本地  
 	`git clone https://gitee.com/szsk/kms.git`
-
 2. 打开`main.go`，文件内搜索`kms.sunzishaokao.com`替换为你自己的KMS服务器地址
-
 3. 编译源代码  
 	`go build`
 
