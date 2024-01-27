@@ -3,82 +3,285 @@ package main
 import (
 	"fmt"
 	"os/exec"
-	"runtime"
+	"time"
 )
 
 func main() {
-	// 定义KMS服务器地址和端口
-	kmsServer := "szsk.sunzishaokao.com"
-	kmsPort := "1688"
-
-	// 定义Office版本和对应的KMS客户端安装密钥
-	officeVersions := map[string]string{
-		"13": "YC7DK-G2NP3-2QQC3-J6H88-GVGXT",
-		"16": "XQNVK-8JYDB-WJ9W3-YJ8YR-WFG99",
-		"19": "NMMKJ-6RK4F-KMJVX-8D9MJ-6MWKP",
-		"21": "FXYTK-NJJ8C-GB6DW-3DYQT-6F7TH",
-		// 添加其他Office版本和对应的密钥
+	// 获取系统版本
+	version, err := GetWindowsVersion()
+	if err != nil {
+		fmt.Println("获取Windows版本时出错:", err)
+		return
 	}
-
-	// 获取操作系统架构
-	var arch string
-	if runtime.GOARCH == "386" {
-		arch = "x86"
-	} else {
-		arch = "x64"
+	currentTime := time.Now().Format("2006-01-02 15:04:05")
+	fmt.Println("@Author:szsk2022")
+	fmt.Println("@Email:admin@sunzishaokao.com")
+	fmt.Println("@URL:https://www.github.com/szsk2022/kms")
+	fmt.Printf("%s 注意：请以管理员身份运行此程序，否则可能会激活失败！\n", currentTime)
+	// 根据不同版本执行不同的VBS代码或其他操作
+	switch version {
+	// Windows 10
+	case "Windows 10 Pro":
+		fmt.Printf("检测到是%s，开始激活......\n", version)
+		fmt.Println("正在添加KMS激活服务器......")
+		runCommand("cscript", "slmgr", "/skms", "kms.sunzishaokao.com")
+		fmt.Println("正在添加密钥......")
+		runCommand("cscript", "slmgr", "/ipk", "W269N-WFGWX-YVC9B-4J6C9-T83GX")
+		fmt.Println("正在激活......")
+		runCommand("cscript", "slmgr", "/ato")
+		fmt.Print("激活成功！")
+		pause()
+	case "Windows 10 Professional N":
+		fmt.Printf("检测到是%s，开始激活......\n", version)
+		fmt.Println("正在添加KMS激活服务器......")
+		exec.Command("csript", "csript", "slmgr", "/skms", "kms.sunzishaokao.com")
+		fmt.Println("正在添加密钥......")
+		exec.Command("csript", "csript", "slmgr", "/ipk", "MH37W-N47XK-V7XM9-C7227-GCQG9")
+		fmt.Println("正在激活......")
+		exec.Command("csript", "csript", "slmgr", "/ato")
+		fmt.Print("激活成功！")
+		pause()
+	case "Windows 10 Enterprise":
+		fmt.Printf("检测到是%s，开始激活......\n", version)
+		fmt.Println("正在添加KMS激活服务器......")
+		exec.Command("csript", "slmgr", "kms.sunzishaokao.com")
+		fmt.Println("正在添加密钥......")
+		exec.Command("csript", "slmgr", "/ipk", "NPPR9-FWDCX-D2C8J-H872K-2YT43")
+		fmt.Println("正在激活......")
+		exec.Command("csript", "slmgr", "/ato")
+		fmt.Print("激活成功！")
+		pause()
+	case "Windows 10 Enterprise N":
+		fmt.Printf("检测到是%s，开始激活......\n", version)
+		fmt.Println("正在添加KMS激活服务器......")
+		exec.Command("csript", "slmgr", "/skms", "kms.sunzishaokao.com")
+		fmt.Println("正在添加密钥......")
+		exec.Command("csript", "slmgr", "/ipk", "DPH2V-TTNVB-4X9Q3-TJR4H-KHJW4")
+		fmt.Println("正在激活......")
+		exec.Command("csript", "slmgr", "/ato")
+		fmt.Print("激活成功！")
+		pause()
+	case "Windows 10 Education":
+		fmt.Printf("检测到是%s，开始激活......\n", version)
+		fmt.Println("正在添加KMS激活服务器......")
+		exec.Command("csript", "slmgr", "/skms", "kms.sunzishaokao.com")
+		fmt.Println("正在添加密钥......")
+		exec.Command("csript", "slmgr", "/ipk", "NW6C2-QMPVW-D7KKK-3GKT6-VCFB2")
+		fmt.Println("正在激活......")
+		exec.Command("csript", "slmgr", "/ato")
+		fmt.Print("激活成功！")
+		pause()
+	case "Windows 10 Education N":
+		fmt.Printf("检测到是%s，开始激活......\n", version)
+		fmt.Println("正在添加KMS激活服务器......")
+		exec.Command("csript", "slmgr", "/skms", "kms.sunzishaokao.com")
+		fmt.Println("正在添加密钥......")
+		exec.Command("csript", "slmgr", "/ipk", "2WH4N-8QGBV-H22JP-CT43Q-MDWWJ")
+		fmt.Println("正在激活......")
+		exec.Command("csript", "slmgr", "/ato")
+		fmt.Print("激活成功！")
+		pause()
+	case "Windows 10 Enterprise 2015 LTSB":
+		fmt.Printf("检测到是%s，开始激活......\n", version)
+		fmt.Println("正在添加KMS激活服务器......")
+		exec.Command("csript", "slmgr", "/skms", "kms.sunzishaokao.com")
+		fmt.Println("正在添加密钥......")
+		exec.Command("csript", "slmgr", "/ipk", "WNMTR-4C88C-JK8YV-HQ7T2-76DF9")
+		fmt.Println("正在激活......")
+		exec.Command("csript", "slmgr", "/ato")
+		fmt.Print("激活成功！")
+		pause()
+	case "Windows 10 Enterprise 2016 LTSB":
+		fmt.Printf("检测到是%s，开始激活......\n", version)
+		fmt.Println("正在添加KMS激活服务器......")
+		exec.Command("csript", "slmgr", "/skms", "kms.sunzishaokao.com")
+		fmt.Println("正在添加密钥......")
+		exec.Command("csript", "slmgr", "/ipk", "DCPHK-NFMTC-H88MJ-PFHPY-QJ4BJ")
+		fmt.Println("正在激活......")
+		exec.Command("csript", "slmgr", "/ato")
+		fmt.Print("激活成功！")
+		pause()
+	case "Windows 10 Enterprise 2016 LTSB N":
+		fmt.Printf("检测到是%s，开始激活......\n", version)
+		fmt.Println("正在添加KMS激活服务器......")
+		exec.Command("csript", "slmgr", "/skms", "kms.sunzishaokao.com")
+		fmt.Println("正在添加密钥......")
+		exec.Command("csript", "slmgr", "/ipk", "QFFDN-GRT3P-VKWWX-X7T3R-8B639")
+		fmt.Println("正在激活......")
+		exec.Command("csript", "slmgr", "/ato")
+		fmt.Print("激活成功！")
+		pause()
+	// Windows 8.1
+	case "Windows 8.1 Professional":
+		fmt.Printf("检测到是%s，开始激活......\n", version)
+		fmt.Println("正在添加KMS激活服务器......")
+		exec.Command("csript", "slmgr", "/skms", "kms.sunzishaokao.com")
+		fmt.Println("正在添加密钥......")
+		exec.Command("csript", "slmgr", "/ipk", "GCRJD-8NW9H-F2CDX-CCM8D-9D6T9")
+		fmt.Println("正在激活......")
+		exec.Command("csript", "slmgr", "/ato")
+		fmt.Print("激活成功！")
+		pause()
+	case "Windows 8.1 Professional N":
+		fmt.Printf("检测到是%s，开始激活......\n", version)
+		fmt.Println("正在添加KMS激活服务器......")
+		exec.Command("csript", "slmgr", "/skms", "kms.sunzishaokao.com")
+		fmt.Println("正在添加密钥......")
+		exec.Command("csript", "slmgr", "/ipk", "HMCNV-VVBFX-7HMBH-CTY9B-B4FXY")
+		fmt.Println("正在激活......")
+		exec.Command("csript", "slmgr", "/ato")
+		fmt.Print("激活成功！")
+		pause()
+	case "Windows 8.1 Enterprise":
+		fmt.Printf("检测到是%s，开始激活......\n", version)
+		fmt.Println("正在添加KMS激活服务器......")
+		exec.Command("csript", "slmgr", "/skms", "kms.sunzishaokao.com")
+		fmt.Println("正在添加密钥......")
+		exec.Command("csript", "slmgr", "/ipk", "MHF9N-XY6XB-WVXMC-BTDCT-MKKG7")
+		fmt.Println("正在激活......")
+		exec.Command("csript", "slmgr", "/ato")
+		fmt.Print("激活成功！")
+		pause()
+	case "Windows 8.1 Enterprise N":
+		fmt.Printf("检测到是%s，开始激活......\n", version)
+		fmt.Println("正在添加KMS激活服务器......")
+		exec.Command("csript", "slmgr", "/skms", "kms.sunzishaokao.com")
+		fmt.Println("正在添加密钥......")
+		exec.Command("csript", "slmgr", "/ipk", "TT4HM-HN7YT-62K67-RGRQJ-JFFXW")
+		fmt.Println("正在激活......")
+		exec.Command("csript", "slmgr", "/ato")
+		fmt.Print("激活成功！")
+		pause()
+	// Windows 8
+	case "Windows 8 Professional N":
+		fmt.Printf("检测到是%s，开始激活......\n", version)
+		fmt.Println("正在添加KMS激活服务器......")
+		exec.Command("csript", "slmgr", "/skms", "kms.sunzishaokao.com")
+		fmt.Println("正在添加密钥......")
+		exec.Command("csript", "slmgr", "/ipk", "XCVCF-2NXM9-723PB-MHCB7-2RYQQ")
+		fmt.Println("正在激活......")
+		exec.Command("csript", "slmgr", "/ato")
+		fmt.Print("激活成功！")
+		pause()
+	case "Windows 8 Enterprise":
+		fmt.Printf("检测到是%s，开始激活......\n", version)
+		fmt.Println("正在添加KMS激活服务器......")
+		exec.Command("csript", "slmgr", "/skms", "kms.sunzishaokao.com")
+		fmt.Println("正在添加密钥......")
+		exec.Command("csript", "slmgr", "/ipk", "32JNW-9KQ84-P47T8-D8GGY-CWCK7")
+		fmt.Println("正在激活......")
+		exec.Command("csript", "slmgr", "/ato")
+		fmt.Print("激活成功！")
+		pause()
+	case "Windows 8 Enterprise N":
+		fmt.Printf("检测到是%s，开始激活......\n", version)
+		fmt.Println("正在添加KMS激活服务器......")
+		exec.Command("csript", "slmgr", "/skms", "kms.sunzishaokao.com")
+		fmt.Println("正在添加密钥......")
+		exec.Command("csript", "slmgr", "/ipk", "JMNMF-RHW7P-DMY6X-RF3DR-X2BQT")
+		fmt.Println("正在激活......")
+		exec.Command("csript", "slmgr", "/ato")
+		fmt.Print("激活成功！")
+		pause()
+	// Windows 7
+	case "Windows 7 Professional N":
+		fmt.Printf("检测到是%s，开始激活......\n", version)
+		fmt.Println("正在添加KMS激活服务器......")
+		exec.Command("csript", "slmgr", "/skms", "kms.sunzishaokao.com")
+		fmt.Println("正在添加密钥......")
+		exec.Command("csript", "slmgr", "/ipk", "MRPKT-YTG23-K7D7T-X2JMM-QY7MG")
+		fmt.Println("正在激活......")
+		exec.Command("csript", "slmgr", "/ato")
+		fmt.Print("激活成功！")
+	case "Windows 7 Professional E":
+		fmt.Printf("检测到是%s，开始激活......\n", version)
+		fmt.Println("正在添加KMS激活服务器......")
+		exec.Command("csript", "slmgr", "/skms", "kms.sunzishaokao.com")
+		fmt.Println("正在添加密钥......")
+		exec.Command("csript", "slmgr", "/ipk", "W82YF-2Q76Y-63HXB-FGJG9-GF7QX")
+		fmt.Println("正在激活......")
+		exec.Command("csript", "slmgr", "/ato")
+		fmt.Print("激活成功！")
+	case "Windows 7 Enterprise":
+		fmt.Printf("检测到是%s，开始激活......\n", version)
+		fmt.Println("正在添加KMS激活服务器......")
+		exec.Command("csript", "slmgr", "/skms", "kms.sunzishaokao.com")
+		fmt.Println("正在添加密钥......")
+		exec.Command("csript", "slmgr", "/ipk", "33PXH-7Y6KF-2VJC9-XBBR8-HVTHH")
+		fmt.Println("正在激活......")
+		exec.Command("csript", "slmgr", "/ato")
+		fmt.Print("激活成功！")
+	case "Windows 7 Enterprise N":
+		fmt.Printf("检测到是%s，开始激活......\n", version)
+		fmt.Println("正在添加KMS激活服务器......")
+		exec.Command("csript", "slmgr", "/skms", "kms.sunzishaokao.com")
+		fmt.Println("正在添加密钥......")
+		exec.Command("csript", "slmgr", "/ipk", "YDRBP-3D83W-TY26F-D46B2-XCKRJ")
+		fmt.Println("正在激活......")
+		exec.Command("csript", "slmgr", "/ato")
+		fmt.Print("激活成功！")
+	case "Windows 7 Enterprise E":
+		fmt.Printf("检测到是%s，开始激活......\n", version)
+		fmt.Println("正在添加KMS激活服务器......")
+		exec.Command("csript", "slmgr", "/skms", "kms.sunzishaokao.com")
+		fmt.Println("正在添加密钥......")
+		exec.Command("csript", "slmgr", "/ipk", "C29WB-22CC8-VJ326-GHFJW-H9DH4")
+		fmt.Println("正在激活......")
+		exec.Command("csript", "slmgr", "/ato")
+		fmt.Print("激活成功！")
+	// Windows Vista
+	case "Windows Vista Business":
+		fmt.Printf("检测到是%s，开始激活......\n", version)
+		fmt.Println("正在添加KMS激活服务器......")
+		exec.Command("csript", "slmgr", "/skms", "kms.sunzishaokao.com")
+		fmt.Println("正在添加密钥......")
+		exec.Command("csript", "slmgr", "/ipk", "YFKBB-PQJJV-G996G-VWGXY-2V3X8")
+		fmt.Println("正在激活......")
+		exec.Command("csript", "slmgr", "/ato")
+		fmt.Print("激活成功！")
+		pause()
+	case "Windows Vista Business N":
+		fmt.Printf("检测到是%s，开始激活......\n", version)
+		fmt.Println("正在添加KMS激活服务器......")
+		exec.Command("csript", "slmgr", "/skms", "kms.sunzishaokao.com")
+		fmt.Println("正在添加密钥......")
+		exec.Command("csript", "slmgr", "/ipk", "HMBQG-8H2RH-C77VX-27R82-VMQBT")
+		fmt.Println("正在激活......")
+		exec.Command("csript", "slmgr", "/ato")
+		fmt.Print("激活成功！")
+		pause()
+	case "Windows Vista Enterprise":
+		fmt.Printf("检测到是%s，开始激活......\n", version)
+		fmt.Println("正在添加KMS激活服务器......")
+		exec.Command("csript", "slmgr", "/skms", "kms.sunzishaokao.com")
+		fmt.Println("正在添加密钥......")
+		exec.Command("csript", "slmgr", "/ipk", "YFKBB-PQJJV-G996G-VWGXY-2V3X8")
+		fmt.Println("正在激活......")
+		exec.Command("csript", "slmgr", "/ato")
+		fmt.Print("激活成功！")
+		pause()
+	case "Windows Vista Enterprise N":
+		fmt.Printf("检测到是%s，开始激活......\n", version)
+		fmt.Println("正在添加KMS激活服务器......")
+		exec.Command("csript", "slmgr", "/skms", "kms.sunzishaokao.com")
+		fmt.Println("正在添加密钥......")
+		exec.Command("csript", "slmgr", "/ipk", "VTC42-BM838-43QHV-84HX6-XJXKV")
+		fmt.Println("正在激活......")
+		exec.Command("csript", "slmgr", "/ato")
+		fmt.Print("激活成功！")
+		pause()
+	case "Microsoft Windows 7 Professional":
+		fmt.Printf("检测到是%s，开始激活......\n", version)
+		fmt.Println("正在添加KMS激活服务器......")
+		exec.Command("csript", "slmgr", "/skms", "kms.sunzishaokao.com")
+		fmt.Println("正在添加密钥......")
+		exec.Command("csript", "slmgr", "/ipk", "FJ82H-XT6CR-J8D7P-XQJJ2-GPDD4")
+		fmt.Println("正在激活......")
+		exec.Command("csript", "slmgr", "/ato")
+		fmt.Print("激活成功！")
+		pause()
+	default:
+		fmt.Printf("检测到是%s无法激活此系统，请等待后续兼容！\n", version)
+		pause()
 	}
-
-	// 遍历所有可能的Office版本
-	for version, key := range officeVersions {
-		// 构造可能的Office安装路径
-		paths := []string{
-			fmt.Sprintf(`C:\Program Files\Microsoft Office\Root\Office%s`, version),       // Click-to-Run安装路径
-			fmt.Sprintf(`C:\Program Files\Microsoft Office\Office%s`, version),            // MSI安装路径（64位）
-			fmt.Sprintf(`C:\Program Files (%s)\Microsoft Office\Office%s`, arch, version), // MSI安装路径（32位）
-		}
-
-		// 查找ospp.vbs文件
-		var osppPath string
-		for _, path := range paths {
-			if _, err := exec.LookPath(fmt.Sprintf("%s\\ospp.vbs", path)); err == nil {
-				osppPath = fmt.Sprintf("%s\\ospp.vbs", path)
-				break
-			}
-		}
-
-		// 如果找不到ospp.vbs，则跳过此版本
-		if osppPath == "" {
-			fmt.Printf("未找到Office %s 的 ospp.vbs 文件，跳过激活。\n", version)
-			continue
-		}
-
-		// 设置KMS客户端安装密钥
-		fmt.Printf("正在为Office %s 设置KMS客户端安装密钥...\n", version)
-		cmd := exec.Command("cscript", osppPath, "/inpkey:"+key)
-		cmd.Run()
-
-		// 设置KMS服务器地址
-		fmt.Printf("正在为Office %s 设置KMS服务器地址...\n", version)
-		cmd = exec.Command("cscript", osppPath, "/sethst:"+kmsServer+":"+kmsPort)
-		cmd.Run()
-
-		// 尝试激活
-		fmt.Printf("正在尝试激活Office %s ...\n", version)
-		cmd = exec.Command("cscript", osppPath, "/act")
-		cmd.Run()
-
-		// 检查激活状态
-		fmt.Printf("正在检查Office %s 的激活状态...\n", version)
-		cmd = exec.Command("cscript", osppPath, "/dstatus")
-		output, err := cmd.CombinedOutput()
-		if err != nil {
-			fmt.Println("激活过程中发生错误:", err)
-		} else {
-			fmt.Println(string(output))
-		}
-
-		fmt.Println("-------------------------------------")
-	}
-
-	fmt.Println("激活过程完成。")
 }
