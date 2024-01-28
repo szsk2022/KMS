@@ -22,14 +22,14 @@
     "Comments": "使用Go语言开发的简单、快速、免费的KMS激活程序",
     "CompanyName": "孙子烧烤知识分享站",
     "FileDescription": "直接双击运行即可！",
-    "FileVersion": "v1.0.1.0",
+    "FileVersion": "v2.0.0.0",
     "InternalName": "SZSK-KMS",
     "LegalCopyright": "Copyright (c) 2024 SZSK-KMS",
     "LegalTrademarks": "",
     "OriginalFilename": "main.exe",
     "PrivateBuild": "",
     "ProductName": "SZSK-KMS",
-    "ProductVersion": "v1.0.1.0",
+    "ProductVersion": "v2.0.0.0",
     "SpecialBuild": ""
   },
   "VarFileInfo": {
