@@ -24,7 +24,7 @@
 </p>
 
 #### Introduction
-The KMS activation tool is written in Go language, which is not yet fully developed. It is expected to be completed by March 2024!
+The KMS activation tool is written in Go language
 
 #### Usage instructions
 1. Download the latest compiled program from [Gitee-Releases](https://gitee.com/szsk/kms/releases "Releases")
