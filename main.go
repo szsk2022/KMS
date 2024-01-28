@@ -15,7 +15,8 @@ func main() {
 	fmt.Println("Ver:1.0.1")
 	fmt.Println("Email:admin@sunzishaokao.com")
 	fmt.Println("URL:https://www.github.com/szsk2022/kms")
-	fmt.Printf("注意：请以管理员身份运行此程序，否则可能会激活失败！\n")
+	//从2.0.1版本开始注释此功能，替代是嵌入式清单文件
+	//fmt.Printf("注意：请以管理员身份运行此程序，否则可能会激活失败！\n")
 	productName, err := getProductName()
 	if err != nil {
 		fmt.Println("getProductName函数获取Windows系统版本失败:", err)
