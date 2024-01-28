@@ -1,0 +1,43 @@
+{
+  "FixedFileInfo": {
+    "FileVersion": {
+      "Major": 1,
+      "Minor": 0,
+      "Patch": 0,
+      "Build": 0
+    },
+    "ProductVersion": {
+      "Major": 1,
+      "Minor": 0,
+      "Patch": 0,
+      "Build": 0
+    },
+    "FileFlagsMask": "3f",
+    "FileFlags ": "00",
+    "FileOS": "040004",
+    "FileType": "01",
+    "FileSubType": "00"
+  },
+  "StringFileInfo": {
+    "Comments": "使用Go语言开发的简单、快速、免费的KMS激活程序",
+    "CompanyName": "孙子烧烤知识分享站",
+    "FileDescription": "直接双击运行即可！",
+    "FileVersion": "v1.0.0.0",
+    "InternalName": "SZSK-KMS",
+    "LegalCopyright": "Copyright (c) 2024 SZSK-KMS",
+    "LegalTrademarks": "",
+    "OriginalFilename": "main.exe",
+    "PrivateBuild": "",
+    "ProductName": "SZSK-KMS",
+    "ProductVersion": "v1.0.0.0",
+    "SpecialBuild": ""
+  },
+  "VarFileInfo": {
+    "Translation": {
+      "LangID": "0804",
+      "CharsetID": "04B0"
+    }
+  },
+  "IconPath": "icon.ico",
+  "ManifestPath": ""
+}

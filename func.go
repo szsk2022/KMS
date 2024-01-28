@@ -9,6 +9,12 @@ import (
 	"os/exec"
 )
 
+/*
+	@Author:@szsk2022
+	@Email：admin@sunzishaokao.com
+	@URL:https://github.com/szsk2022/kms
+*/
+
 // 初始化termbox
 func init() {
 	if err := termbox.Init(); err != nil {
@@ -54,12 +60,11 @@ func runCommand(command string, args ...string) {
 	var stderr bytes.Buffer
 	cmd.Stdout = &out
 	cmd.Stderr = &stderr
-
 	err := cmd.Run()
 	if err != nil {
 		// 打印错误信息
 		fmt.Printf("执行命令失败: %v\n", err)
-		fmt.Println("错误信息:", stderr.String())
+		fmt.Println("详细错误信息:", stderr.String())
 		// 暂停程序以便查看错误信息
 		pause()
 		// 退出程序

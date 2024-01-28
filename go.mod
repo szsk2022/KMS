@@ -9,5 +9,5 @@ require (
 
 require (
 	github.com/mattn/go-runewidth v0.0.15 // indirect
-	github.com/rivo/uniseg v0.4.5 // indirect
+	github.com/rivo/uniseg v0.4.6 // indirect
 )
