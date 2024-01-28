@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 产品官网
+    url: https://www.sunzishaokao.com/plugin/kms/
+    about: 使用PHP编写的KMS激活脚本在线生成
