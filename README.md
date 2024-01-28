@@ -25,6 +25,7 @@
 
 #### 介绍
 使用Go语言编写的KMS激活工具
+![](https://www.sunzishaokao.com/wp-content/uploads/2024/01/20240128192106757-8AF796CD-4250-4e69-837D-3FDDDAC3B446.png)
 
 #### 使用说明
 1. 下载我们最新编译的程序[Gitee-Releases](https://gitee.com/szsk/kms/releases "Releases")

@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84a26d4f-c2cf-441e-b139-d9cf140bdbe0" name="更改" comment="Subject: Refactor project structure and improve code organization&#10;&#10;Commit message body:&#10;&#10;This commit represents a major restructuring of the project to optimize its architecture and enhance maintainability. The following refactorings have been implemented:&#10;&#10;- **Modularization**: Broke down the monolithic main package into logically separate modules, including `product_key_management` for handling product key data, `windows_activation` to encapsulate all activation logic, and `system_utilities` for fetching system information from the registry.&#10;&#10;- **Code Clean-up**: Removed redundant code blocks and applied consistent naming conventions across the entire codebase. Functions are now more concise and adhere to the single responsibility principle.&#10;&#10;- **Error Handling**: Enhanced error handling throughout the application by introducing custom error types, improving error messages, and ensuring that errors are properly propagated and logged where necessary.&#10;&#10;- **Optimized Dependencies**: Reviewed and pruned unnecessary dependencies. Also updated existing dependencies to their latest stable versions for improved security and compatibility.&#10;&#10;- **Enhanced Logging**: Implemented structured logging with file output for better tracking of application events, especially during the activation process. This includes writing log entries to a 'logs' directory within the project root.&#10;&#10;- **User Experience Improvement**: Simplified the user interface and ensured clear feedback is provided to the user at each step of the activation process.&#10;&#10;Please note that due to the extensive nature of these changes, thorough testing is required to ensure that all functionalities remain intact post-refactoring.&#10;&#10;Signed-off-by: szsk admin@sunzishaokao.com">
-      <change afterPath="$PROJECT_DIR$/admin.manifest" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin.syso" afterDir="false" />
+    <list default="true" id="84a26d4f-c2cf-441e-b139-d9cf140bdbe0" name="更改" comment="轻微改动">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource.syso" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,8 +138,8 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Go 构建.go build SZSK_KMS" />
       <item itemvalue="Go 构建.go build NewProject/bassic" />
+      <item itemvalue="Go 构建.go build SZSK_KMS" />
     </list>
     <recent_temporary>
       <list>
