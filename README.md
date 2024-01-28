@@ -31,6 +31,28 @@
 1. 下载我们最新编译的程序[Gitee-Releases](https://gitee.com/szsk/kms/releases "Releases")
 2. 直接打开运行即可，此时程序会自动检测系统版本并激活
 
+>Tips：激活输出乱码属于正常情况，等待后续修复
+
+#### 支持的系统版本
+* Windows 11 Pro  
+* Windows 11 Enterprise  
+* Windows 10 Pro  
+* Windows 10 Enterprise  
+* Windows 8.1 Pro  
+* Windows 8.1 Enterprise  
+* Windows 7 Pro  
+* Windows 7 Enterprise  
+* Windows Server 2022 Standard  
+* Windows Server 2022 Datacenter  
+* Windows Server 2019 Standard  
+* Windows Server 2019 Datacenter  
+* Windows Server 2016 Standard  
+* Windows Server 2016 Datacenter  
+* Windows Server 2012 R2 Server Standard  
+* Windows Server 2012 R2 Datacenter  
+* Windows Server 2008 R2 Standard  
+* Windows Server 2008 R2 Datacenter  
+* Windows Server 2008 R2 Enterprise
 #### 编译说明
 1. 将源代码克隆到本地  
 ```

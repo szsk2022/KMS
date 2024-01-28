@@ -46,7 +46,6 @@ func activateProduct(key string) {
 	cmd := exec.Command("cscript.exe",
 		"//Nologo", "C:\\Windows\\System32\\slmgr.vbs", "/ipk", key,
 		"/skms", "szsk.sunzishaokao.com", "/ato")
-
 	// 创建或打开日志文件
 	logFile, err := os.OpenFile("activation.log", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
 	if err != nil {
