@@ -24,7 +24,7 @@
 </p>
 
 #### 介绍
-使用Go语言编写的KMS激活工具，目前没有开发完成，预计2024年3月之前完成开发！
+使用Go语言编写的KMS激活工具
 
 #### 使用说明
 1. 下载我们最新编译的程序[Gitee-Releases](https://gitee.com/szsk/kms/releases "Releases")
