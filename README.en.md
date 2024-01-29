@@ -27,7 +27,7 @@
 The KMS activation tool is written in Go language
 ![](https://www.sunzishaokao.com/wp-content/uploads/2024/01/20240128192106757-8AF796CD-4250-4e69-837D-3FDDDAC3B446.png)
 #### Usage instructions
-1. Download the latest compiled program from [Gitee-Releases](https://gitee.com/szsk/kms/releases "Releases")
+1. Download the latest compiled program from [Gitee-Releases](https://gitee.com/szsk/kms/releases "Releases")  
 2.Simply run the program, and it will automatically detect the system version and activate it
 
 >Tips：Activating output garbled characters is a normal situation, waiting for further repair
